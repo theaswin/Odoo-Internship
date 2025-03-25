@@ -9,6 +9,8 @@
     'website': 'https://www.zbeanztech.com/',
     'depends': [],
     'data': [
+        'security/ir.model.access.csv',
+        'views/food_view.xml'
         
     ],
     
