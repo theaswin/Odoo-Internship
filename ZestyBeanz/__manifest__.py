@@ -7,7 +7,7 @@
     'summary': 'This is for Training Odoo',
     'description': """Learning The Odoo Framework""",
     'website': 'https://www.zbeanztech.com/',
-    'depends': [],
+    'depends': ['sale','sale_management','account','contacts'],
     'data': [
         'security/ir.model.access.csv',
         'views/food_view.xml'
