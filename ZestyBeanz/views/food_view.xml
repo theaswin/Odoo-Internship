@@ -10,7 +10,7 @@
 
 					<header>
 						<div class="custom-header-buttons">
-							<button name="test_function" string="TEST" type="object" />
+							<button name="create_sale_order" string="Create Sale Order" invisible="_sale_created == True" type="object" class="oe_highlight"/>
 						</div>
 					</header>
 					<sheet>
@@ -23,6 +23,7 @@
                             <field name="is_satisfied" />
 							<field name="sale_order_id" />
 							<field name="invoice_id" />
+							<field name="_sale_created" invisible="1"/>
 							
                         </group>
 
@@ -48,7 +49,7 @@
 			<field name="model">food.food</field>
 			<field name="arch" type="xml">
 				<list string='Food'>
-					<field name="name" />
+					<field name="partner_id" />
 					<field name="price" />
 					<field name="review" />
 					<field name="is_satisfied" />
